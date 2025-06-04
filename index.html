@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cube Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cube Timer</h1>
+    <main class="layout">
+      <div class="controls">
+        <button id="generate">Generate Scramble</button>
+        <button id="reset">Reset Timer</button>
+        <button id="themeToggle">Toggle Dark/Light</button>
+        <button id="clearHistory">Clear History</button>
+      </div>
+
+      <div class="content">
+        <div id="scramble">[Click button to get scramble]</div>
+        <div id="timer">00:00.000</div>
+
+        <div id="stats">
+          <p><strong>Best Time:</strong> <span id="best">--:--.---</span></p>
+          <p><strong>AO5:</strong> <span id="ao5">--:--.---</span></p>
+        </div>
+
+        <ul id="history"></ul>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
